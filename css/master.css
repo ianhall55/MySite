@@ -1,0 +1,40 @@
+
+
+.header {
+  width: 100%;
+  /*height: 100vh;*/
+  background-image: url('../images/greys_hike.jpg');
+  background-size: cover;
+
+}
+
+.main {
+    width: 80%;
+    display: block;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 50px;
+    min-width: 700px;
+    min-height: 3000px;
+}
+
+
+section.pic-me {
+    width: 200px;
+}
+
+.about-me {
+    height: 200px;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.image-circle {
+  width: 200px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  height: 200px;
+  background-image: src('../images/ian_hall.jpg');
+}
