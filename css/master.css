@@ -5,8 +5,8 @@
     height: 100%;
     width: 100%;
     background-image: url(http://res.cloudinary.com/de79besd8/image/upload/v1477333545/my_site/chirripo_sunrise.jpg);
-    /*background-position-x: 50%;
-    background-position-y: 65%;*/
+    /*background-position-x: 50%;*/
+    background-position-y: 50%;
     background-size: cover;
     background-repeat-x: no-repeat;
     background-repeat-y: no-repeat;
@@ -21,32 +21,61 @@
 .header {
   width: 100%;
   height: 50px;
-  border: 1px solid black;
-
+  /*border: 1px solid black;*/
+  background-color: #945D60;
+  background-color: #056571;
+  background-color: #984B43;
+  /*18121E 233237 984B43 EAC67A*/
 }
 
 .main {
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
-
     /*margin-top: 50px;*/
     min-width: 700px;
     font-family: 'Roboto', 'Open Sans', sans-serif;
 
 }
 
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.contact-links li {
+  width: 190px;
+  height: 195px;
+  align-items: center;
+  margin: 0px 20px;
+
+  border-radius: 10%;
+}
+
+.contact-links li img {
+  margin: auto;
+  padding: 10px 10px;
+}
+
+.contact-links li:hover {
+  cursor: pointer;
+  transition: filter .3s, -webkit-filter .3s;
+  /*background: #2196F3;*/
+  background: #009688;
+}
+
 
 section.pic-me {
     width: 300px;
-    margin: 30px auto;
+    margin: 10px auto;
 }
 
-.about-me {
+.splash {
     width: 100%;
     display: block;
-    border: 1px solid black;
+
     min-width: 700px;
     font-family: 'Roboto', 'Open Sans', sans-serif;
     border-bottom: 1px solid black;
@@ -61,7 +90,7 @@ section.pic-me {
 .image-circle {
   margin: auto;
   width: 200px;
-  /*border: 1px solid grey;*/
+  border: 1px solid lightgrey;
   border-radius: 50%;
   height: 200px;
   background-image: url('../images/ian_hall.jpg');
@@ -70,28 +99,50 @@ section.pic-me {
   /*margin: 25px 30px;*/
 }
 
+.image-header {
+  width: 40px;
+  height: 40px;
+  border: 1px solid lightgrey;
+  border-radius: 50%;
+  background-image: url('../images/ian_hall.jpg');
+  background-size: 100% auto;
+  background-position: center 25%;
+}
+
 .summary-info {
-  margin: 0px auto 30px;
+  margin: 100px auto 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.projects {
-    display: flex;
-    flex-direction: row;
+.summary-info h1 {
+  font-size: 45px
+}
+
+.summary-info h2 {
+  font-size: 25px;
+}
+
+.projects h1 {
+  text-align: center;
+  width: 200px;
+  font-size: 40px;
+  display: block;
+  margin: auto;
+
 }
 
 .row {
-  height: 300px;
-
+  height: 350px;
+  border: 1px solid black
 }
 
 .skills {
   display: flex;
   flex-direction: row;
   margin: auto;
-  width: 80%;
+  width: 95%;
   height: 110px;
   justify-content: center;
   padding-bottom: 10px;
@@ -115,6 +166,16 @@ section.pic-me {
 .tech-skills {
     /* margin: 40px; */
     background: black;
-    padding: 20px;
+    padding: 25px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.tech-skills h1 {
+  font-size: 40px;
+  display: block;
+  margin: auto;
 }
