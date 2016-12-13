@@ -26,6 +26,9 @@
   background-color: #056571;
   background-color: #984B43;
   /*18121E 233237 984B43 EAC67A*/
+  position: fixed;
+  top: 0px;
+  left: 0px;
 }
 
 .main {
@@ -166,7 +169,7 @@ section.pic-me {
 .tech-skills {
     /* margin: 40px; */
     background: black;
-    padding: 25px;
+    padding: 15px 25px 35px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -174,8 +177,30 @@ section.pic-me {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
-.tech-skills h1 {
+.row-header {
+  height: 60px;
+}
+
+.row-header h1 {
+  text-align: center;
+  width: 300px;
   font-size: 40px;
   display: block;
   margin: auto;
+
+}
+
+.skills-header {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.projects-header {
+
+}
+
+.row-header div {
+  /*background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  height: 30px;*/
 }
