@@ -1,21 +1,40 @@
 
 
+.background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url(http://res.cloudinary.com/de79besd8/image/upload/v1477333545/my_site/chirripo_sunrise.jpg);
+    /*background-position-x: 50%;
+    background-position-y: 65%;*/
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    background-repeat-y: no-repeat;
+    /*background-attachment: fixed;*/
+    /*background-origin: initial;*/
+    /*background-clip: initial;*/
+    opacity: 0.75;
+    z-index: -1;
+
+}
+
 .header {
   width: 100%;
-  /*height: 100vh;*/
-  /*background-image: url('../images/greys_hike.jpg');*/
-  /*background-size: cover;*/
+  height: 50px;
+  border: 1px solid black;
 
 }
 
 .main {
-    width: 60%;
-    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     border: 1px solid black;
-    margin: auto;
-    margin-top: 50px;
+
+    /*margin-top: 50px;*/
     min-width: 700px;
     font-family: 'Roboto', 'Open Sans', sans-serif;
+
 }
 
 
@@ -25,20 +44,26 @@ section.pic-me {
 }
 
 .about-me {
-    height: auto;
+    width: 100%;
+    display: block;
+    border: 1px solid black;
+    min-width: 700px;
+    font-family: 'Roboto', 'Open Sans', sans-serif;
     border-bottom: 1px solid black;
     display: flex;
     flex-direction: column;
     margin: auto;
+    height: 100vh;
+
 }
 
 
 .image-circle {
   margin: auto;
-  width: 300px;
+  width: 200px;
   /*border: 1px solid grey;*/
   border-radius: 50%;
-  height: 300px;
+  height: 200px;
   background-image: url('../images/ian_hall.jpg');
   background-size: 100% auto;
   background-position: center 25%;
@@ -55,4 +80,41 @@ section.pic-me {
 .projects {
     display: flex;
     flex-direction: row;
+}
+
+.row {
+  height: 300px;
+
+}
+
+.skills {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  width: 80%;
+  height: 110px;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.skills li {
+  width: 20%;
+  /* height: 81px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-content: center; */
+  align-items: center;
+}
+
+.skills li img {
+  margin-bottom: 5px;
+}
+
+
+.tech-skills {
+    /* margin: 40px; */
+    background: black;
+    padding: 20px;
+    color: white;
 }
