@@ -5,9 +5,12 @@
     <title>Ian Hall</title>
     <script   src="https://code.jquery.com/jquery-3.1.0.min.js"
       integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="https://use.fontawesome.com/5681a3c0a9.js"></script>
     <link rel="stylesheet" href="./css/master.css" >
     <link rel="stylesheet" href="./css/css_reset.css" >
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <script src="./js/bundle.js" charset="utf-8"></script>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
   </head>
@@ -129,30 +132,82 @@
           <h1>Projects</h1>
           <div></div>
         </div>
-        <div class="row project-1">
-          <div>
-            <div class="image">
-              
+        <div class="row">
+          <div class="project proj1">
+            <div class="project-images">
+              <div class="proj-im" >
+                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481595408/my_site/pixelset/splash.png" />
+              </div>
+              <div class="proj-im">
+                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481595408/my_site/pixelset/album-home.png" />
+              </div>
+              <div class="proj-im">
+                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481671722/my_site/pixelset/album-view.png" />
+              </div>
+              <div class="proj-im">
+                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481595408/my_site/pixelset/gallery_cover.png" />
+              </div>
+              <div class="proj-im">
+                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481595408/my_site/pixelset/gallery_masonry.png" />
+              </div>
+              <div class="proj-im">
+                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481595408/my_site/pixelset/gallery_slider.png" />
+              </div>
+
             </div>
             <div class="content">
               <h2 class="title">Pixelset</h2>
-              <p>
-
-              </p>
+              <ul>
+                <li>
+                  Constructed RESTful back-end API using Rails to serve application and respond
+                  to asynchronous AJAX requests
+                </li>
+                <li>
+                  Architected full React and Redux structure for unidirectional data flow
+                </li>
+                <li>
+                  Integrated image hosting through Cloudinary API to allow dynamic image
+resizing, increase application speed, and limit server load
+                </li>
+                <li>
+                  Implemented additional React.js libraries, Slick and Masonry, to enhance
+                  picture presentation and improve user experience
+                </li>
+              </ul>
             </div>
 
           </div>
         </div>
         <div class="row project-2">
-          <div>
-            <div class="image">
+          <div class="project proj2">
+            <div class="project-images">
+              <div class="proj-im">
+                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481595408/my_site/apex/start.png" />
+              </div>
+              <div class="proj-im">
+                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481595408/my_site/apex/game_open.png" />
+              </div>
+              <div class="proj-im">
+                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481595408/my_site/apex/play1.png" />
+              </div>
+              <div class="proj-im">
+                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481595408/my_site/apex/play2.png" />
+              </div>
+
 
             </div>
             <div class="content">
-              <h2 class="title">Pixelset</h2>
-              <p>
+              <h2 class="title">Apex</h2>
+              <ul>
+                <li>
+                  Employed HTML5 canvas element and vector math to create game elements
+                </li>
+                <li>
+                  Utilized jQuery to dynamically manipulate DOM elements for a fast, interactive
+user experience
+                </li>
 
-              </p>
+              </ul>
             </div>
 
           </div>
@@ -165,6 +220,18 @@
       </div>
 
   </div>
+
+  <script>
+    $('.project-images').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      // arrows: false
+    });
+
+  </script>
+
 
   </body>
 </html>
