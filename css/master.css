@@ -30,7 +30,30 @@
   top: 0px;
   left: 0px;
   z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start
+  padding: 5px;
+  font-family: 'Roboto', 'Open Sans', sans-serif;
+  font-size: 15px;
 }
+
+.header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start
+
+}
+
+.header ul a {
+  margin: 10px 10px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  width: 80px;
+
+}
+
 
 .main {
     width: 100%;
@@ -109,6 +132,7 @@ section.pic-me {
   background-image: url('../images/ian_hall.jpg');
   background-size: 100% auto;
   background-position: center 25%;
+  margin: 4px 20px 4px 15px;
 }
 
 .summary-info {
@@ -137,7 +161,7 @@ section.pic-me {
 
 .row {
   height: 350px;
-  border: 1px solid black
+  /*border: 1px solid black*/
 }
 
 .skills {
@@ -196,7 +220,7 @@ section.pic-me {
 }
 
 .projects-header {
-
+  /*margin: 50px 0px;*/
 }
 
 .row-header div {
@@ -228,6 +252,25 @@ section.pic-me {
   /*width: 350px;*/
 }
 
+.proj1 {
+  /*background-color: rgba(255, 255, 255, 0.6);*/
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.proj1 div h2 {
+  color: #009688;
+}
+
+.proj2 {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.proj2 div h2 {
+  color: #e65c00;
+}
+
 .content {
   /*width: 70%;*/
   padding: 30px;
@@ -252,4 +295,9 @@ section.pic-me {
 .content ul li {
   width: 100%;
   margin-bottom: 5px;
+}
+
+.beginscroll {
+  position: relative;
+  bottom: 50px;
 }

@@ -5,6 +5,8 @@
     <title>Ian Hall</title>
     <script   src="https://code.jquery.com/jquery-3.1.0.min.js"
       integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="jquery.localscroll.js" type="text/javascript"></script>
+    <script src="jquery.scrollTo.js" type="text/javascript"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="https://use.fontawesome.com/5681a3c0a9.js"></script>
     <link rel="stylesheet" href="./css/master.css" >
@@ -15,13 +17,35 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
   </head>
   <body>
-
+  <a name="top"></a>
   <div class="main">
     <div class="background">
     </div>
 
       <div class="header">
         <div class="image-header" ></div>
+        <ul class="header-links">
+          <a href="#top">
+            <li>
+              Home
+            </li>
+          </a>
+          <a href="#beginskills">
+            <li>
+              Skills
+            </li>
+          </a>
+          <a href="#beginprojects">
+            <li>
+              Projects
+            </li>
+          </a>
+          <a href="#begincontact">
+            <li>
+              Contact
+            </li>
+          </a>
+        </ul>
       </div>
       <div class="splash">
 
@@ -57,7 +81,8 @@
 
 
       </div>
-      <div class="row">
+      <a class="beginscroll" name="beginskills"></a>
+      <div class="row skills-top">
         <div class="row-header skills-header" >
           <h1>Skills</h1>
           <div></div>
@@ -127,6 +152,7 @@
           </ul>
         </div>
       </div>
+      <a class="beginscroll" name="beginprojects"></a>
       <div class="projects">
         <div class="row-header projects-header" >
           <h1>Projects</h1>
@@ -213,6 +239,7 @@ user experience
           </div>
         </div>
       </div>
+      <a class="beginscroll" name="begincontact"></a>
       <div class="row about-me">
         <section class="pic-me">
           <div class="image-circle" />
@@ -222,6 +249,9 @@ user experience
   </div>
 
   <script>
+    $(document).ready(function() {
+     $('.header-links').localScroll({duration:800});
+    });
     $('.project-images').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
