@@ -54,6 +54,9 @@
 
 }
 
+.header ul a:hover {
+  color: #009688;
+}
 
 .main {
     width: 100%;
@@ -160,7 +163,7 @@ section.pic-me {
 }
 
 .row {
-  height: 350px;
+  min-height: 350px;
   /*border: 1px solid black*/
 }
 
