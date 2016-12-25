@@ -182,18 +182,19 @@
                 </div>
 
               </div>
+
+            </div>
+            <div class="content">
+              <h2 class="title">Pixelset</h2>
               <div class="proj-links">
                 <a href="http://www.pixelset.co">
                   Live
                 </a>
-                |
+                <span>|</span>
                 <a href="http://www.github.com/ianhall55/pixelset">
                   Github
                 </a>
               </div>
-            </div>
-            <div class="content">
-              <h2 class="title">Pixelset</h2>
               <ul>
                 <li>
                   Constructed RESTful back-end API using Rails to serve application and respond
@@ -217,24 +218,35 @@ resizing, increase application speed, and limit server load
         </div>
         <div class="row project-2">
           <div class="project proj2">
-            <div class="project-images">
-              <div class="proj-im">
-                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481595408/my_site/apex/start.png" />
-              </div>
-              <div class="proj-im">
-                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481595408/my_site/apex/game_open.png" />
-              </div>
-              <div class="proj-im">
-                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481595408/my_site/apex/play1.png" />
-              </div>
-              <div class="proj-im">
-                <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400/v1481595408/my_site/apex/play2.png" />
+            <div>
+              <div class="project-images">
+                <div class="proj-im">
+                  <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400,h_210/v1481595408/my_site/apex/start.png" />
+                </div>
+                <div class="proj-im">
+                  <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400,h_210/v1481595408/my_site/apex/game_open.png" />
+                </div>
+                <div class="proj-im">
+                  <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400,h_210/v1481595408/my_site/apex/play1.png" />
+                </div>
+                <div class="proj-im">
+                  <img src="http://res.cloudinary.com/de79besd8/image/upload/c_scale,w_400,h_210/v1481595408/my_site/apex/play2.png" />
+                </div>
               </div>
 
 
             </div>
             <div class="content">
               <h2 class="title">Apex</h2>
+              <div class="proj-links">
+                <a href="http://apex.bitballoon.com">
+                  Live
+                </a>
+                <span>|</span>
+                <a href="http://www.github.com/ianhall55/apex">
+                  Github
+                </a>
+              </div>
               <ul>
                 <li>
                   Employed HTML5 canvas element and vector math to create game elements
@@ -259,28 +271,47 @@ user experience
           <ul>
             <li>
               <i class="fa fa-envelope fa-2x" aria-hidden="true" ></i>
-              ian@ianhall.io
+                ian@ianhall.io
             </li>
             <li>
               <i class="fa fa-phone-square fa-2x" aria-hidden="true" ></i>
-              201-805-5532
+                201-805-5532
             </li>
           </ul>
+        </section>
+        <section>
+          <p>
+            I am a full-stack developer
+          </p>
         </section>
       </div>
 
   </div>
 
   <script>
-    $(document).ready(function() {
-     $('.header-links').localScroll({duration:800});
-    });
+    // $(document).ready(function() {
+    //  $('.header-links').localScroll({duration:800});
+    // });
     $('.project-images').slick({
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 3000,
       // arrows: false
+    });
+    $(function() {
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
     });
 
   </script>

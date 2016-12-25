@@ -116,7 +116,7 @@ section.pic-me {
 
 
 .image-circle {
-  margin: auto;
+  margin: 30px auto;
   width: 200px;
   border: 1px solid lightgrey;
   border-radius: 50%;
@@ -240,10 +240,10 @@ section.pic-me {
 
 .project-images {
     /*border: 1px solid black;*/
-    height: 250px;
+    height: 230px;
     /*min-height: 250px;*/
     width: 400px;
-    margin: 40px;
+    margin: 40px 40px 20px;
 }
 
 .proj-im {
@@ -268,6 +268,7 @@ section.pic-me {
 .proj2 {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
+  min-height:inherit;
 }
 
 .proj2 div h2 {
@@ -285,7 +286,7 @@ section.pic-me {
 .title {
   font-size: 30px;
   font-weight: 10px;
-  margin-bottom: 10px;
+  /*margin-bottom: 10px;*/
 }
 
 .content ul {
@@ -303,4 +304,41 @@ section.pic-me {
 .beginscroll {
   position: relative;
   bottom: 50px;
+}
+
+
+.proj-links {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.proj-links a {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.proj-links span {
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+.about-me {
+  height: 92vh;
+}
+
+
+.contact-info ul {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin:  auto;
+    justify-content: center;
+}
+
+.contact-info ul li {
+    text-align: center;
+    /* display: flex; */
+    flex-direction: center;
 }
