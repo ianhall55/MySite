@@ -325,9 +325,15 @@ section.pic-me {
 }
 
 .about-me {
-  height: 92vh;
+  min-height: 92vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
 }
 
+.about-me div {
+  display: flex;
+  flex-direction: column;
+}
 
 .contact-info ul {
     display: flex;
@@ -335,10 +341,19 @@ section.pic-me {
     width: 200px;
     margin:  auto;
     justify-content: center;
+    color: white;
 }
 
 .contact-info ul li {
     text-align: center;
     /* display: flex; */
     flex-direction: center;
+}
+
+.about-me section p {
+  padding: 70px 50px;
+  color: white;
+  font-size: 22px;
+  line-height: 2;
+
 }
