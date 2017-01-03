@@ -355,5 +355,5 @@ section.pic-me {
   color: white;
   font-size: 22px;
   line-height: 2;
-
+  overflow-wrap: normal;
 }
