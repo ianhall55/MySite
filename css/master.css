@@ -275,6 +275,20 @@ section.pic-me {
   color: #e65c00;
 }
 
+.proj3 {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  min-height:inherit;
+}
+
+.proj3 div h2 {
+  color: red;
+}
+
+.rails-lite-pic {
+  background-color: white;
+}
+
 .content {
   /*width: 70%;*/
   padding: 30px;
